@@ -1018,7 +1018,7 @@ src_install() {
 
 	# Install wrapper script
 	[[ -f "${ED}/usr/bin/${PN}" ]] && rm "${ED}/usr/bin/${PN}"
-	newbin "${FILESDIR}/${PN}-r1.sh" ${PN}
+	newbin "${FILESDIR}/${PN}.sh" ${PN}
 
 	# Update wrapper
 	sed -i \
